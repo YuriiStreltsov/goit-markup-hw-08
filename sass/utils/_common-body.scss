@@ -1,0 +1,20 @@
+// Помещает контент с паддингами в размер рамки
+body {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Задает стили для основного шрифта
+body {
+  color: $primary-text-color;
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

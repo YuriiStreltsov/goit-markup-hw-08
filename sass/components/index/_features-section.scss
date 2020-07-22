@@ -1,0 +1,44 @@
+// Преимущества
+.feature.section {
+  padding-top: 94px;
+}
+
+.feature .border {
+  border-bottom: 1px solid #ececec;
+
+  padding-bottom: 94px;
+}
+
+.feature.list {
+  display: flex;
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .item {
+    width: 270px;
+  }
+}
+
+.feature .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: start;
+
+  margin-bottom: 10px;
+}
+
+// Feature icon
+
+.icon-features {
+  display: flex;
+
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-bgr-color;
+}

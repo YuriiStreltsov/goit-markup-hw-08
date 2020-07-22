@@ -1,0 +1,50 @@
+.clients.section {
+  padding-top: 91px;
+  padding-bottom: 94px;
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.clients.section .item {
+}
+
+.clients.section .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: $link-color;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  @extend %hover-focus;
+}
+
+// .client-section .link:hover,
+// .client-section .link:focus {
+//   color: var(--accent-color);
+//   border-color: var(--accent-color);
+
+//   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+// }
+
+// .client-section .icon {
+//   fill: currentColor;
+// }
+
+// .client-section .section-title {
+//   margin-bottom: 50px;
+// }

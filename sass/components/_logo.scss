@@ -1,0 +1,24 @@
+// Общие стили для логотипа
+.logo {
+  color: $accent-color;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+// Черная и белая часть логотипа
+.logo {
+  &-black {
+    color: $primary-black-color;
+  }
+  &-white {
+    color: $primary-white-color;
+  }
+}
+
+// Убирает тени с логотипа в подвале
+.footer .logo {
+  text-shadow: none;
+}
