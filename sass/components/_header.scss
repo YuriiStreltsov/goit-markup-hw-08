@@ -1,6 +1,9 @@
 // Задает нижнюю часть рамки
 .header {
-  border-bottom: 1px solid $border-header-color;
+  
+    border-bottom: 1px solid $border-header-color;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 // Навигация на другие страницы
@@ -8,13 +11,14 @@
 .main-nav {
   display: flex;
   align-items: center;
+  display: none;
 }
 
 // Навигация по страницам сайта
 .site-nav {
   display: flex;
   margin-left: 85px;
-
+ 
   .item {
     display: flex;
   }
@@ -63,6 +67,7 @@
 
 // Навигация по контактам в шапке
 .contacts-header {
+ 
   display: flex;
   margin-left: auto;
 

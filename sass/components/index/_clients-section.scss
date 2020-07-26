@@ -1,19 +1,28 @@
 .clients.section {
-  padding-top: 91px;
-  padding-bottom: 94px;
+    padding-top: 60px;
+  padding-bottom: 60px;
+
+
 
   .title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    font-size: 28px;
+    line-height: 1.17;
   }
 
   .list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 .clients.section .item {
+  // @media screen and (min-width: 480px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  // }
 }
 
 .clients.section .link {
@@ -22,7 +31,7 @@
   justify-content: center;
 
   fill: $link-color;
-  width: 170px;
+  width: 100%;
   height: 90px;
 
   border: 1px solid #afb1b8;
@@ -33,18 +42,16 @@
   @extend %hover-focus;
 }
 
-// .client-section .link:hover,
-// .client-section .link:focus {
-//   color: var(--accent-color);
-//   border-color: var(--accent-color);
+.client-section .link:hover,
+.client-section .link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 
-//   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-// }
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
 
-// .client-section .icon {
-//   fill: currentColor;
-// }
+.client-section .icon {
+  fill: currentColor;
+}
 
-// .client-section .section-title {
-//   margin-bottom: 50px;
-// }
+

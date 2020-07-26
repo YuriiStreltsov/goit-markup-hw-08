@@ -1,6 +1,11 @@
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
+  
+  
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
 
   .title {
     margin-bottom: 50px;

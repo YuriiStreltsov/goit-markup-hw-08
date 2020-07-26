@@ -3,34 +3,35 @@
 .team.section {
   background-color: $secondary-bgr-color;
 
-  padding-top: 91px;
-  padding-bottom: 97px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   .title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .list {
-    display: flex;
-  }
-
-  .item:not(:last-child) {
-    margin-right: 30px;
+    
   }
 
   .img {
-    display: block;
-    margin-bottom: 30px;
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
   }
 }
 
 .team .item {
+
+&:not(:last-child){
+  margin-bottom: 30px;
+}
+
   background-color: $primary-white-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 
-  width: 270px;
-
+  
   .title.name {
     font-weight: 500;
     font-size: 16px;
@@ -51,5 +52,5 @@
 
 .team .social-list {
   @extend %social-list;
-  margin-bottom: 24px;
-}
+    padding-bottom: 24px; 
+   }

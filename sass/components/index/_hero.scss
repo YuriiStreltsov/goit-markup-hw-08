@@ -1,22 +1,21 @@
 // Главный слоган
 .hero {
+  display: none;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  height: 600px;
+  background: rgba(47, 48, 58, 0.8);
 
-  //   background-image: url("../images/startup.jpg");
-  background-image: linear-gradient($primary-bgr-color, $primary-bgr-color),
-    url("../images/startup.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+//   //   background-image: url("../images/startup.jpg");
+//   background-image: linear-gradient($primary-bgr-color, $primary-bgr-color),
+//     url("../images/startup.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
 
   .title {
-    width: 696px;
+    width: 360px;
     margin-top: 0px;
     margin-bottom: 30px;
     margin-left: auto;
@@ -25,8 +24,8 @@
     color: $primary-white-color;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
