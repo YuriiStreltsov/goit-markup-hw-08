@@ -1,6 +1,6 @@
 // Главный слоган
 .hero {
-  display: none;
+  
   text-align: center;
   padding: 118px 60px;
   margin-left: auto;
@@ -15,19 +15,21 @@
 //   background-size: cover;
 
   .title {
-    width: 360px;
+    width: 100%;
     margin-top: 0px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-
     color: $primary-white-color;
 
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $mobile) {
+      width: 360px;
+    }
   }
 }
