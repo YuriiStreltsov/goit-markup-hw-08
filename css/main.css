@@ -416,7 +416,7 @@ body {
   }
 }
 
-.site-nav .link:hover, .contacts-header .link:hover, .clients.section .link:hover, .site-nav .link:focus, .contacts-header .link:focus, .clients.section .link:focus {
+.menu-button:hover, .site-nav .link:hover, .contacts-header .link:hover, .clients.section .link:hover, .menu-button:focus, .site-nav .link:focus, .contacts-header .link:focus, .clients.section .link:focus {
   color: #2196f3;
   fill: #2196f3;
   border-color: #2196f3;
@@ -514,6 +514,37 @@ body {
   padding-bottom: 16px;
 }
 
+.menu {
+  display: none;
+}
+
+.menu.is-open {
+  display: block;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,7 +552,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
 }
 
 .site-nav {
@@ -1136,8 +1166,8 @@ body {
 
 .form-field .icon-check {
   display: inline-block;
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
   margin-right: 7px;
   border: 2px solid #212121;
   -webkit-box-sizing: border-box;
