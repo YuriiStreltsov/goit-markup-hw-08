@@ -13,15 +13,28 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header container">
+      
       <!-- Навигация по сайту -->
-      <nav class="container main-nav">
-        <!-- Ссылка на главную страницу -->
-        <a class="logo link" href="./index.html" title="Web Studio">
-          Web <span class="logo-black"> Studio </span>
-        </a>
+      <nav class="main-nav">
 
-        <!-- Навигация на другие страницы -->
+        <!-- Ссылка на главную страницу -->
+      <a class="logo link" href="./index.html" title="Web Studio">
+        Web <span class="logo-black"> Studio </span>
+      </a>
+
+        <!-- Кнопка выпадающего меню -->
+        <button type="button" class="menu-button" data-menu-button aria-expanded="false">
+          <svg class="icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu40px"></use>
+            <use class="icon-close" href="./images/symbol-defs.svg#icon-close40px"></use>
+          </svg>
+        </button>
+
+        <!-- Контейнер для навигации -->
+        <div class="menu" data-menu>
+
+          <!-- Навигация на другие страницы -->        
         <ul class="site-nav list">
           <li class="item">
             <a href="./index.html" title="Web Studio" class="link">
@@ -56,8 +69,10 @@
             </a>
           </li>
         </ul>
+        </div>        
       </nav>
     </header>
+    <div class="border-header"></div>
 
     <!-- Основной контент -->
     <main>
@@ -358,5 +373,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

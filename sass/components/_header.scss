@@ -1,7 +1,8 @@
 // Задает нижнюю часть рамки
 .header {
+  position: relative;
+
   
-    border-bottom: 1px solid $border-header-color;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -13,6 +14,18 @@
 
 .menu.is-open {
   display: block;
+  margin-top: 1px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: $primary-white-color;
+
+  z-index: 999;
 }
 
 // Кнопка меню для мобилок
@@ -50,30 +63,35 @@
 
 // Навигация по страницам сайта
 .site-nav {
-  display: flex;
-  margin-left: 85px;
+  text-align: center;
+  // display: flex;
+  margin-bottom: 40px;
  
   .item {
-    display: flex;
+    // display: flex;
+    // padding-bottom: 8px;
+    
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
-
+  
   .item + .item {
-    margin-left: 50px;
+    // margin-left: 50px;
   }
 
   .link {
-    position: relative;
+    display: inline-block;
 
     color: $primary-text-color;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 18px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    // padding-top: 32px;
+    
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
     @extend %hover-focus;
@@ -81,17 +99,22 @@
 
   // Указатель текущей открытой страницы
   .link.current {
+    position: relative;
     color: $accent-color;
+    padding-bottom: 8px;
   }
 
   .link.current::after {
-    display: flex;
+    // display: flex;
     content: "";
 
     position: absolute;
     width: 100%;
     height: 4px;
-    bottom: 0px;
+    bottom: 0;
+    left: 50%;
+    
+    transform: translate(-50%, 100%);
     background-color: $accent-color;
     pointer-events: none;
 
@@ -101,20 +124,26 @@
 
 // Навигация по контактам в шапке
 .contacts-header {
-  display: flex;
-  margin-left: auto;
+  text-align: center;
+  // display: flex;
+  // margin-left: auto;
   
+  .item {
+    &:not(:last-child){
+      margin-bottom: 16px;
+    }
+  }
 
   .item + .item {
-    margin-left: 30px;
+    // margin-left: 30px;
   }
 
   .link {
     color: $title-text-color;
     fill: $title-text-color;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 18px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
 
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;

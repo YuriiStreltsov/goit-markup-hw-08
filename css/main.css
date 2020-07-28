@@ -391,6 +391,10 @@ body {
   margin-bottom: 0px;
 }
 
+.border-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -509,7 +513,7 @@ body {
 }
 
 .header {
-  border-bottom: 1px solid #ececec;
+  position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -520,6 +524,15 @@ body {
 
 .menu.is-open {
   display: block;
+  margin-top: 1px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 999;
 }
 
 .menu-button {
@@ -555,70 +568,59 @@ body {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 85px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.site-nav .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.site-nav .item + .item {
-  margin-left: 50px;
+.site-nav .item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .site-nav .link {
-  position: relative;
+  display: inline-block;
   color: #212121;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .site-nav .link.current {
+  position: relative;
   color: #2196f3;
+  padding-bottom: 8px;
 }
 
 .site-nav .link.current::after {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   content: "";
   position: absolute;
   width: 100%;
   height: 4px;
-  bottom: 0px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
   background-color: #2196f3;
   pointer-events: none;
   border-radius: 4px;
 }
 
 .contacts-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  text-align: center;
 }
 
-.contacts-header .item + .item {
-  margin-left: 30px;
+.contacts-header .item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .contacts-header .link {
   color: #757575;
   fill: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -664,6 +666,10 @@ body {
   .hero .title {
     width: 360px;
   }
+}
+
+.hero.is-open {
+  display: none;
 }
 
 .feature.section {
