@@ -532,6 +532,8 @@ body {
   left: 0;
   width: 100%;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
   z-index: 999;
 }
 
@@ -666,10 +668,6 @@ body {
   .hero .title {
     width: 360px;
   }
-}
-
-.hero.is-open {
-  display: none;
 }
 
 .feature.section {
@@ -1215,14 +1213,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 34px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -4px;
+  margin-bottom: 40px;
 }
 
-.button-list .item + .item {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.button-list .item {
+  margin: 4px;
 }
 
 .button-list .button {
@@ -1348,7 +1354,7 @@ body {
 }
 
 .project-section {
-  padding-top: 93px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /*# sourceMappingURL=main.css.map */
