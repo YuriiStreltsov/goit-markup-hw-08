@@ -1215,7 +1215,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -4px;
+  margin: -7.5px -4px;
   margin-bottom: 40px;
 }
 
@@ -1224,11 +1224,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
 .button-list .item {
-  margin: 4px;
+  margin: 7.5px 4px;
 }
 
 .button-list .button {
@@ -1259,11 +1260,24 @@ body {
 }
 
 .project-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-list .item {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .project-list .item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-list .item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
 
 .project-list .title {
@@ -1282,7 +1296,7 @@ body {
 }
 
 .project-list .link {
-  display: inline-block;
+  display: block;
   color: #212121;
 }
 
@@ -1291,29 +1305,14 @@ body {
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.project-list .item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.project-list .item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.project-list .item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
 .project-list .img {
   display: block;
+  width: 100%;
+  height: 294px;
 }
 
 .project-list .desc {
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
   -webkit-box-sizing: border-box;
@@ -1321,21 +1320,22 @@ body {
 }
 
 .overlay-project {
-  width: 370px;
+  width: 100%;
   height: 294px;
   position: absolute;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  top: 0;
+  left: 0;
   overflow: hidden;
 }
 
 .popup-text {
+  height: 100%;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.56;
   margin: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   position: absolute;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);

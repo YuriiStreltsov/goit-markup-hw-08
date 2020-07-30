@@ -2,20 +2,18 @@
 .button-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -4px;
-  margin-bottom: 40px;
-  @media screen and (max-width: $tablet-low){
-  }
   
+  margin: -7.5px -4px;
+  margin-bottom: 40px;
+   
   @media screen and (min-width: $tablet) {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
- 
-
 
 .button-list .item {
-  margin: 4px;
+  margin: 7.5px 4px;
 }
 
 .button-list .button {
