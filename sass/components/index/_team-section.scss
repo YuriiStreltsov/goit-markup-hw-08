@@ -11,7 +11,11 @@
   }
 
   .list {
-    
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
   }
 
   .img {
@@ -19,13 +23,24 @@
   margin-bottom: 30px;
   width: 100%;
   }
-}
+} 
 
 .team .item {
+  @media screen and (max-width: $tablet-low) {
+    &:not(:last-child){
+      margin-bottom: 30px;
+   }  
+ }
 
-&:not(:last-child){
-  margin-bottom: 30px;
-}
+ @media screen and (min-width: $tablet) {
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
+ }
+
+ @media screen and (min-width: $desktop) {
+  width: calc((100% - 8 * 15px) / 4);
+  margin: 15px;     
+} 
 
   background-color: $primary-white-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
