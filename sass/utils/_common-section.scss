@@ -3,11 +3,15 @@
   // для заголовков
   .title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
 
     margin-top: 0px;
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
+    line-height: 1.16;
+    }    
   }
 
   // для контента

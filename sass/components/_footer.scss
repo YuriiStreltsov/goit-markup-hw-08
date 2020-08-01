@@ -5,19 +5,62 @@
 
   color: $primary-white-color;
   background-color: $background-footer-color;
+  
+   
 
-  text-align: center;
+    .content {   
+      @media screen and (max-width: $desktop-low) {           
+        text-align: center;  
+        justify-content: center;   
+      } 
+    
+    
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;      
+      
+      align-items: baseline;     
+    }
+    @media screen and (min-width: $desktop) {           
+      // justify-content: space-between;     
+    }
+
+  }
 
   .main {
-    margin-bottom: 60px;
-      }
+    
+    @media screen and (max-width: $tablet-low) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-right: 165px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 69px;
+    }
+  }
 
   .social-links {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 60px;    
   }
+
   .submit {
-    
+    @media screen and (min-width: $mobile) and (max-width: $desktop-low) {
+      width: 450px;
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+   
+    @media screen and (min-width: $desktop) {
+      
+      display: flex;
+      flex-direction: column;      
+      margin-left: 94px;
+      
+      
+    }
   }
 }
 
@@ -82,12 +125,21 @@
     margin-bottom: 20px;
   }
 
-  .input {
-    width: 100%;
+  .input {    
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
-    margin-bottom: 20px;
+    width: 100%;
+    
+    @media screen and (max-width: $desktop-low) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 20px;
+      margin-right: 18px;
+      width: 358px
+    }
     
     font-size: 16px;
     line-height: 1.25;

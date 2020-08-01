@@ -16,6 +16,7 @@
   background-size: cover;
 
   .title {
+    
     width: 100%;
     margin-top: 0px;
     margin-bottom: 30px;
@@ -29,7 +30,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (min-width: $min-width) {
+    @media screen and (min-width: 450px) {
       width: $min-width;
     }
   }
