@@ -193,19 +193,41 @@
           <ul class="list">
             <!-- Николай Кучеренко -->
             <li class="item">
-              <img class="img"
-                srcset="  
-                ./images/nikola_270.jpg 270w,
-                ./images/nikola_354.jpg 354w,
-                ./images/nikola_450.jpg 450w,
-                ./images/nikola@2x_540.jpg 540w,                
-                ./images/nikola@2x_708.jpg 708w,                   
-                ./images/nikola@2x_900.jpg 900w"
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/nikola_270.jpg    270w,
+                    ./images/team/nikola@2x_540.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
                 
-                src="./images/nikola_450.jpg"
-                alt="Фотография Николая"
-                sizes="(min-width: 1200px) 22.5vw, (min-width: 678px) 46.48vw, 100vw"
-              />
+                <source
+                  srcset="
+                    ./images/team/nikola_354.jpg    354w,
+                    ./images/team/nikola@2x_708.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="100vw"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/nikola_450.jpg    450w,
+                    ./images/team/nikola@2x_900.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+
+                <img
+                  class="img"
+                  src="./images/team/nikola_450.jpg"
+                  alt=
+                  "Фото Николая Кучеренко"
+                />
+                </picture>
               <h3 class="title name">Николай Кучеренко</h3>
               <p class="text">Product Designer</p>
               <ul class="list social-list">
@@ -242,12 +264,41 @@
 
             <!-- Ольга Иванова -->
             <li class="item">
-              <img
-                class="img"
-                src="./images/marta.jpg"
-                alt="Марта Стюарт"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/Olga_270.jpg    270w,
+                    ./images/team/Olga@2x_540.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
+                
+                <source
+                  srcset="
+                    ./images/team/Olga_354.jpg    354w,
+                    ./images/team/Olga@2x_708.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="100vw"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/Olga_450.jpg    450w,
+                    ./images/team/Olga@2x_900.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+
+                <img
+                  class="img"
+                  src="./images/team/Olga_450.jpg"
+                  alt=
+                  "Фото Ольги Ивановой"
+                />
+                </picture>
               <h3 class="title name">Ольга Иванова</h3>
               <p class="text">Frontend Developer</p>
               <ul class="list social-list">
@@ -284,12 +335,41 @@
 
             <!-- Андрей Шевченко -->
             <li class="item">
-              <img
-                class="img"
-                src="./images/robert.jpg"
-                alt="Роберт Джакис"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/Andrey_270.jpg    270w,
+                    ./images/team/Andrey@2x_540.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
+                
+                <source
+                  srcset="
+                    ./images/team/Andrey_354.jpg    354w,
+                    ./images/team/Andrey@2x_708.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="100vw"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/Andrey_450.jpg    450w,
+                    ./images/team/Andrey@2x_900.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+
+                <img
+                  class="img"
+                  src="./images/team/Andrey_450.jpg"
+                  alt=
+                  "Фото Андрея Шевченко"
+                />
+                </picture>
               <h3 class="title name">Андрей Шевченко</h3>
               <p class="text">Marketing</p>
               <ul class="list social-list">
@@ -326,12 +406,41 @@
 
             <!-- Иван Николаев -->
             <li class="item">
-              <img
-                class="img"
-                src="./images/martin.jpg"
-                alt="Мартин Доу"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/Ivan_270.jpg    270w,
+                    ./images/team/Ivan@2x_540.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="100vw"
+                />
+                
+                <source
+                  srcset="
+                    ./images/team/Ivan_354.jpg    354w,
+                    ./images/team/Ivan@2x_708.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="100vw"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/Ivan_450.jpg    450w,
+                    ./images/team/Ivan@2x_900.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+
+                <img
+                  class="img"
+                  src="./images/team/Ivan_450.jpg"
+                  alt=
+                  "Фото Ивана Николаев"
+                />
+                </picture>
               <h3 class="title name">Иван Николаев</h3>
               <p class="text">UI Designer</p>
               <ul class="list social-list">
