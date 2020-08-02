@@ -1638,11 +1638,14 @@ body {
 
 .project-list .title {
   margin-bottom: 4px;
-  display: inline-block;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.065em;
+  text-align: start;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .project-list .text {
@@ -1673,9 +1676,6 @@ body {
   border-top: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .overlay-project {

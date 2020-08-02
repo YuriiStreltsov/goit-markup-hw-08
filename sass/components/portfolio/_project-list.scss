@@ -34,12 +34,16 @@
   }
 
   .title {
-    margin-bottom: 4px;
-    display: inline-block;
+    margin-bottom: 4px;    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.065em;
+    text-align: start;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .text {
     
@@ -72,10 +76,7 @@
 
     border: 1px solid #eeeeee;
     border-top: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    box-sizing: border-box;    
   }
 }
 
