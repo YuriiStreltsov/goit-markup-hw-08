@@ -22,10 +22,12 @@
   display: block;
   margin-bottom: 30px;
   width: 100%;
+  height: auto;
   }
 } 
 
 .team .item {
+  
   @media screen and (max-width: $tablet-low) {
     &:not(:last-child){
       margin-bottom: 30px;
@@ -67,5 +69,8 @@
 
 .team .social-list {
   @extend %social-list;
-    padding-bottom: 24px; 
+    padding-bottom: 24px;
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 39px; 
+     }    
    }

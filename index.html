@@ -193,11 +193,18 @@
           <ul class="list">
             <!-- Николай Кучеренко -->
             <li class="item">
-              <img
-                class="img"
-                src="./images/john.jpg"
-                alt="Джон Смитт"
+              <img class="img"
+                srcset="  
+                ./images/nikola_270.jpg 270w,
+                ./images/nikola_354.jpg 354w,
+                ./images/nikola_450.jpg 450w,
+                ./images/nikola@2x_540.jpg 540w,                
+                ./images/nikola@2x_708.jpg 708w,                   
+                ./images/nikola@2x_900.jpg 900w"
                 
+                src="./images/nikola_450.jpg"
+                alt="Фотография Николая"
+                sizes="(min-width: 1200px) 22.5vw, (min-width: 678px) 46.48vw, 100vw"
               />
               <h3 class="title name">Николай Кучеренко</h3>
               <p class="text">Product Designer</p>
