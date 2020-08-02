@@ -632,7 +632,7 @@
     <!-- Модальное окно с формой -->
     <div class="backdrop is-hidden" data-backdrop></div>
     <div class="modal">
-      <form class="form">
+      <form class="form" autocomplete="off">
         <button class="btn-close" type="button" data-close-modal></button>
         <b class="title">Оставьте свои данные, мы вам перезвоним</b>
   
@@ -682,7 +682,7 @@
           </li>
         </ul>
   
-        <button type="button" class="button" data-close-modal2>Отправить</button>
+        <button type="submit" class="button">Отправить</button>
       </form>
     </div>
   
@@ -691,14 +691,12 @@
     <script>
       const refs = {
         openModalBtn: document.querySelector("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        closeModalBtn2: document.querySelector("[data-close-modal2]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),        
         backdrop: document.querySelector("[data-backdrop]"),
       };
 
       refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn2.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);      
 
       refs.backdrop.addEventListener("click", logBackdropClick);
 
